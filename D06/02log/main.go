@@ -1,10 +1,7 @@
 package main
 
-import (
-	"time"
-
-	"github.com/xrubick/Go/D06/mylogger"
-)
+import "time"
+import "github.com/xrubick/Go/D06/mylogger"
 
 //日志需求
 //1.往不同的地方输出日志
@@ -39,4 +36,16 @@ func main() {
 		log.Error("test log :Error")
 		time.Sleep(5 * time.Second)
 	}
+
+	// // runtime.Caller()
+	// pc, file, lineNum, ok := runtime.Caller(0) //0表示第一层
+	// if !ok {
+	// 	fmt.Println("runtime.Caller() failed\n")
+	// 	return
+	// }
+	// funcName := runtime.FuncForPC(pc).Name()
+	// fmt.Println(funcName)
+	// fmt.Println(file)
+	// fmt.Println(lineNum)
+
 }
