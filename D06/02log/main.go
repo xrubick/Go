@@ -48,4 +48,6 @@ func main() {
 	// fmt.Println(file)
 	// fmt.Println(lineNum)
 
+	//下一步日志写入文件、切割
+
 }
