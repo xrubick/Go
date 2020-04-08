@@ -1,12 +1,17 @@
 package main
 
-//事务处理
-
+//事务处理:一个事务对应一个完整的业务,需要执行多次的DML(insert、update、delete)语句共同联合完成.
+//ACID：
+//原子性（Atomicity）
+//一致性（Consistency）
+//隔离性（Isolation）
+//持久性（Durability）
 import (
 	"database/sql"
 	"fmt"
 
 	_ "github.com/go-sql-driver/mysql"
+	//github.com/jmoiron/sqlx(操作数据库的第三方包)
 )
 
 var db *sql.DB //一个连接池对象
