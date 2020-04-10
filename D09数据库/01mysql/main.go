@@ -122,6 +122,7 @@ func main() {
 	err := initDB()
 	if err != nil {
 		fmt.Println("初始化失败:", err)
+		return
 	}
 	fmt.Println("初始化成功")
 	//queryOne(1)
