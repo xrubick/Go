@@ -1,2 +1,2 @@
 # Go
-Go语言自学笔记
+something about go language
